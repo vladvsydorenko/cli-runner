@@ -1,0 +1,12 @@
+{
+  "name": "@vladnet/cli-runner",
+  "version": "1.0.0-a",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/node": "^10.9.4",
+    "typescript": "^3.0.3"
+  }
+}
