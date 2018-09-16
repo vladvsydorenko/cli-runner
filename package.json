@@ -8,7 +8,7 @@
   "scripts": {
     "compile": "webpack --colors",
     "compile:watch": "webpack --watch --colors",
-    "start": "nodemon -q -e ts -w ./src  --delay 0.3 dist/index.js",
+    "start": "nodemon -q -e ts -w ./dist/index.js dist/index.js",
     "start:watch": "concurrently -n \"webpack,cli\" \"yarn run compile:watch\" \"yarn start\""
   },
   "devDependencies": {

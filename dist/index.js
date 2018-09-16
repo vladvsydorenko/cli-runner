@@ -96,14 +96,30 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/CLI.ts":
+/*!********************!*\
+  !*** ./src/CLI.ts ***!
+  \********************/
+/*! exports provided: CLI */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/ts-loader/index.js):\nError: ENOENT: no such file or directory, open 'D:\\js\\cli-runner\\src\\CLI.ts'");
+
+/***/ }),
+
 /***/ "./src/index.ts":
 /*!**********************!*\
   !*** ./src/index.ts ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-console.log("fuck you");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CLI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CLI */ "./src/CLI.ts");
+
+const config = _CLI__WEBPACK_IMPORTED_MODULE_0__["CLI"].findConfig("vladnets.json", "D:\\js\\cli-runner/test/@vladnets/packages/cli/cli-runner");
+console.log(config);
 
 
 /***/ })

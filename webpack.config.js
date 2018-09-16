@@ -26,7 +26,7 @@ module.exports = {
         globalObject: "this",
     },
     watchOptions: {
-        poll: true,
+        aggregateTimeout: 1000,
         ignored: [
             /node_modules([\\]+|\/)+(?!@vladnet)/,
             /d\.ts/,
