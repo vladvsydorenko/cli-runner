@@ -8,6 +8,6 @@
       "noImplicitAny": true,
       "declaration": true,
       "declarationDir": "./dist",
-      "lib": []
+      "lib": ["esnext"]
     }
   }

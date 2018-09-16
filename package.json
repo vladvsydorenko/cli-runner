@@ -5,8 +5,19 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "compile": "webpack --colors",
+    "compile:watch": "webpack --watch --colors",
+    "start": "nodemon -q -e ts -w ./src  --delay 0.3 dist/index.js",
+    "start:watch": "concurrently -n \"webpack,cli\" \"yarn run compile:watch\" \"yarn start\""
+  },
   "devDependencies": {
     "@types/node": "^10.9.4",
-    "typescript": "^3.0.3"
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "ts-loader": "^5.1.1",
+    "typescript": "^3.0.3",
+    "webpack": "^4.19.0",
+    "webpack-cli": "^3.1.0"
   }
 }

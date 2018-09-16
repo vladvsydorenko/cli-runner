@@ -1,3 +1,1 @@
-class A {}
-
-console.log(new A());
+console.log("fuck you");
