@@ -1,5 +1,5 @@
 {
-  "name": "@vladnet/cli-runner",
+  "name": "@vladnets/cli-runner",
   "version": "1.0.0-a",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

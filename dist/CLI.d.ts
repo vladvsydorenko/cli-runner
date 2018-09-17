@@ -1,17 +1,10 @@
-import { ICLIAction } from "./ICLIAction";
 export interface ICLIOptions {
     configFilename?: string;
-    configDirname?: string;
-}
-export interface ICLIConfig {
-    actions: {
-        [id: string]: ICLIAction;
-    };
-    rootdir: string;
+    configRootKey?: string;
+    rootdir?: string;
+    workdir?: string;
 }
 export declare class CLI {
-    config: ICLIConfig;
+    private config;
     constructor(options?: ICLIOptions);
-    static defaultOptions: ICLIOptions;
-    static findConfig(configFilename?: string, workdir?: string): any;
 }

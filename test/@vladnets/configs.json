@@ -1,0 +1,7 @@
+{
+    "vladnets": {
+        "actions": [
+            "./actions"
+        ]
+    }
+}

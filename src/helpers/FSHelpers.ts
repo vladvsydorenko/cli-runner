@@ -11,9 +11,13 @@ export namespace FSHelpers {
 
     export const readJSONFromFile = (filename: string) => {
         const exists = fs.existsSync(filename);
+
         if (!exists) return null;
+
         const content = fs.readFileSync(filename).toString();
+
         let result;
+
         try {
             result = JSON.parse(content);
         }
@@ -21,6 +25,7 @@ export namespace FSHelpers {
             console.error("Fuck", err.stack);
             result = null;
         }
+
         return result;
     }
 
@@ -33,12 +38,16 @@ export namespace FSHelpers {
         let result: string;
 
         for (let i = 0; i < pathParts.length; i++) {
+
             const pathName = path.join(currentDirname, filename);
+
             if (fs.existsSync(pathName)) {
                 result = path.join(currentDirname, filename);
                 break;
             }
+
             currentDirname = path.dirname(currentDirname);
+
         }
 
         return result;
